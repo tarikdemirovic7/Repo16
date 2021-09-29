@@ -1,69 +1,91 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif, sans-serif, serif;
-    font-size: 18px;
-    display: flex;
-    margin: 0;
-    color:rgb(61, 61, 61)
-  }
-  
-  #navbar {
-    width: 20%;
-    border-right: 1px solid rgb(34, 34, 34);
-  }
-  
-  #navbar > header {
-    font-size: 1.7rem;
-    font-weight: 500;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  #navbar > ul {
-    padding: 0;
-    margin: 0;
-  }
-  
-  .nav-links {
-    list-style: none;
-    padding: 0.7rem 0 0.7rem 1rem;
-  }
-  
-  .nav-links:not(:last-child) {
-    border-top: 1px solid rgb(34, 34, 34);
-  }
-  
-  a {
-    text-decoration: none;
-    color: rgb(34, 34, 34)
-  }
-  
-  img {
-    width: 100%;
-  }
-  
-  main {
-    width: 80%;
-    margin: 1rem 2rem 1rem 2rem;
-  }
-  
-  section > header {
-    font-size: 1.7rem;
-    font-weight: 500;
-    padding: 0.5rem 0;
-  }
-  
-  section > *:not(header) {
-    padding-left: 1rem;
-  }
-  
-  code {
-    background-color: #eee;
-    border: 1px solid #999;
-    display: block;
-    padding: 20px;
-    color: rgb(34, 34, 34);
-  }
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: rgb(43, 43, 43);
+  display: flex;
+  margin: 0;
+}
+
+#navbar {  
+  position: fixed;
+  height: 100%;
+  border-right: 2px solid rgb(43, 43, 43);
+  max-width: 25%;
+}
+
+#navbar ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+#navbar ul .nav-links{
+  border-top: 1px solid rgb(43, 43, 43);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40px;
+}
+#navbar ul li img {
+  width: 100%;
+
+}
+
+#navbar ul li a {
+  color: rgb(43, 43, 43);
+  text-decoration: none;
+  margin-left: 25px;
+}
+
+#header {
+  text-align: center;
+  font-size: 30px;
+  height: 40px;
+  font-weight: 500;
+}
+
+
+header {
+  font-size: 30px;
+  height: 40px;
+  font-weight: 500;
+}
+
+main {
+  margin-left: 30%;
+
+}
+
+article {
+  margin: 2%;
+}
+
+main ul {
+  margin-left: 7%;
+  margin-top: 5%;
+}
+main p {
+  margin-top: 2%;
+}
+
+main ul li {
+  margin-top: 2%;
+}
+
+
+code p{
+  width: 80%;
+  background-color: rgb(246, 246, 246);
+  padding-left: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#higher_order_functions {
+  padding-bottom: 5%;
+}
